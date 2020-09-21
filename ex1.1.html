@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function myFunction() {
+        let arr = [1, 4, 2, 12, 34, 56, 78, 3, 17,21];
+        let str = '';
+        let count = 0;
+        for (let i = 0; i <= arr.length - 1; i++) {
+            if (arr[i] >= 10) {
+                str += arr[i]+",";
+                count++;
+            }
+
+        }
+        document.write(str+"<br>");
+        document.write("co  " +count+"  so >=10");
+    }
+
+    myFunction()
+</script>
+</body>
+</html>

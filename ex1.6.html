@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let arr = [];
+    let max = 10;
+    for (let i = 0; i < max; i++) {
+        let num = +prompt("enter a num");
+        arr.push(num)
+    }
+    let v = +prompt("hay nhap v");
+    if (findNumber(v)) {
+        alert('ton tai')
+    }else {
+        alert('khong ton tai')
+    }
+
+    function findNumber(number) {
+        for (let i = 0; i < arr.length; i++) {
+            if (arr[i] === number) {
+                return true;
+            }
+        }
+
+        return false;
+    }
+</script>
+</body>
+</html>
