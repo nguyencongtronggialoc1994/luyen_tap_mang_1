@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form>
+    <p>VIET NAM</p><input type="text" id="VN">
+    <p>ENGLISH</p><input type="text" id="EL">
+    <button type="button" onclick="dict()">DICH</button>
+</form>
+</body>
+<script>
+    function dict() {
+        let language1 = ["con cho", "con meo", "xin chao", "cam on"];
+        let language2 = ["dog", "cat", "hello", "thank"];
+        let value = document.getElementById("VN").value;
+        for (let i = 0; i < language1.length; i++) {
+            if (language1[i] == value) {
+                document.getElementById("EL").value = language2[i];
+            }
+        }
+    }
+</script>
+</html>
